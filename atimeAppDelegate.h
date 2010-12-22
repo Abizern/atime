@@ -11,8 +11,8 @@
 
 @interface atimeAppDelegate : NSObject {
     NSWindow *window;
-		NSTextField *label;
-		NSTimer *updater;
+    NSTextField *label;
+    NSTimer *updater;
 }
 
 @property (assign) IBOutlet NSWindow *window;
