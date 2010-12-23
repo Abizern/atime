@@ -17,7 +17,7 @@
 @synthesize label;
 
 - (void)updateTime {
-	NSTimeInterval itime = [[NSDate date] internetTimeOfDay];
+	double itime = [NSDate internetTimeOfDay];
 	NSUInteger whole = itime;
 	NSUInteger fraction = (itime-whole)*100;
 	

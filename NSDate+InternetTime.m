@@ -11,8 +11,10 @@
 
 @implementation NSDate (TCInternetTime)
 
--(NSTimeInterval)internetTimeOfDay {
-	return fmod([self timeIntervalSince1970]+3600, 86400)/86400.*1000.;
++ (double)internetTimeOfDay {
+    // Return the number of "beats" elapsed in GMT+1.
+    // There are 86.4 seconds to a "beat".
+	return fmod([NSDate timeIntervalSinceReferenceDate]+3600, 86400)/86.4;
 }
 
 @end
