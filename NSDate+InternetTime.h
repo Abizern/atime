@@ -10,5 +10,7 @@
 
 
 @interface NSDate (TCInternetTime)
+
 -(NSTimeInterval)internetTimeOfDay;
+
 @end

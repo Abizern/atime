@@ -10,8 +10,9 @@
 
 
 @implementation NSDate (TCInternetTime)
--(NSTimeInterval)internetTimeOfDay;
-{
+
+-(NSTimeInterval)internetTimeOfDay {
 	return fmod([self timeIntervalSince1970]+3600, 86400)/86400.*1000.;
 }
+
 @end

@@ -10,6 +10,7 @@
 #import "NSDate+InternetTime.h"
 
 @interface atimeAppDelegate : NSObject {
+@private
     NSWindow *window;
     NSTextField *label;
     NSTimer *updater;

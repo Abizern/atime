@@ -53,8 +53,8 @@
 				256AC3D90F4B6AC300CF3369 /* atimeAppDelegate.m */,
 				05D989A7114D5AFF002DC175 /* NSDate+InternetTime.h */,
 				05D989A8114D5AFF002DC175 /* NSDate+InternetTime.m */,
-				05D989C1114D725C002DC175 /* TCBorderlessWindow.m */,
 				05D989C2114D725C002DC175 /* TCBorderlessWindow.h */,
+				05D989C1114D725C002DC175 /* TCBorderlessWindow.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

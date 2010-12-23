@@ -13,10 +13,10 @@
 
 @implementation atimeAppDelegate
 
-@synthesize window, label;
+@synthesize window;
+@synthesize label;
 
--(void)updateTime;
-{
+- (void)updateTime {
 	NSTimeInterval itime = [[NSDate date] internetTimeOfDay];
 	NSUInteger whole = itime;
 	NSUInteger fraction = (itime-whole)*100;
@@ -41,6 +41,7 @@
 	[pretty appendAttributedString:fracs];
 	[label setAttributedStringValue:pretty];
 }
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	updater = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
 }
