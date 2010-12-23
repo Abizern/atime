@@ -7,6 +7,7 @@
 //
 
 #import "atimeAppDelegate.h"
+#import "NSDate+InternetTime.h"
 
 #define $d(...) [NSDictionary dictionaryWithObjectsAndKeys:__VA_ARGS__, nil]
 #define $sf(...) [NSString stringWithFormat:__VA_ARGS__]
@@ -17,29 +18,29 @@
 @synthesize label;
 
 - (void)updateTime {
-	double itime = [NSDate internetTimeOfDay];
-	NSUInteger whole = itime;
-	NSUInteger fraction = (itime-whole)*100;
+	double internetTime = [NSDate internetTimeOfDay];
+	NSUInteger beats = internetTime;
+	NSUInteger centiBeats = (internetTime-beats)*100;
 	
-	NSMutableAttributedString *pretty = [[NSMutableAttributedString new] autorelease];
-	
-	NSAttributedString *at = [[[NSAttributedString alloc] initWithString:@"@" attributes:$d(
+	NSAttributedString *atString = [[[NSAttributedString alloc] initWithString:@"@" attributes:$d(
 		[NSFont boldSystemFontOfSize:56], NSFontAttributeName
 	)] autorelease];
 	
-	NSAttributedString *wholes = [[[NSAttributedString alloc] initWithString:$sf(@"%3d", whole) attributes:$d(
+	NSAttributedString *beatString = [[[NSAttributedString alloc] initWithString:$sf(@"%3d", beats) attributes:$d(
 		[NSFont systemFontOfSize:56], NSFontAttributeName
 	)] autorelease];
 	
-	NSAttributedString *fracs = [[[NSAttributedString alloc] initWithString:$sf(@"%02d", fraction) attributes:$d(
+	NSAttributedString *centiBeatString = [[[NSAttributedString alloc] initWithString:$sf(@"%02d", centiBeats) attributes:$d(
 		[NSFont systemFontOfSize:56], NSFontAttributeName,
 		[NSColor colorWithCalibratedWhite:.4 alpha:.7], NSForegroundColorAttributeName
 	)] autorelease];
+    
+    NSMutableAttributedString *displayString = [[NSMutableAttributedString new] autorelease];
 	
-	[pretty appendAttributedString:at];
-	[pretty appendAttributedString:wholes];
-	[pretty appendAttributedString:fracs];
-	[label setAttributedStringValue:pretty];
+	[displayString appendAttributedString:atString];
+	[displayString appendAttributedString:beatString];
+	[displayString appendAttributedString:centiBeatString];
+	[label setAttributedStringValue:displayString];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {

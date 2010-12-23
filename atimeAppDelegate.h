@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "NSDate+InternetTime.h"
 
 @interface atimeAppDelegate : NSObject {
 @private
