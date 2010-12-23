@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05D989A9114D5AFF002DC175 /* NSDate+InternetTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D989A8114D5AFF002DC175 /* NSDate+InternetTime.m */; };
-		05D989C3114D725C002DC175 /* TCBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D989C1114D725C002DC175 /* TCBorderlessWindow.m */; };
 		05D98AF6114D801C002DC175 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 05D98AF5114D801C002DC175 /* icon.icns */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		256AC3DA0F4B6AC300CF3369 /* atimeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* atimeAppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		EEB0A31B12C4112200B1044C /* atimeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB0A31612C4112200B1044C /* atimeAppDelegate.m */; };
+		EEB0A31C12C4112200B1044C /* NSDate+InternetTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB0A31812C4112200B1044C /* NSDate+InternetTime.m */; };
+		EEB0A31D12C4112200B1044C /* TCBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB0A31A12C4112200B1044C /* TCBorderlessWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05D989A7114D5AFF002DC175 /* NSDate+InternetTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetTime.h"; sourceTree = "<group>"; };
-		05D989A8114D5AFF002DC175 /* NSDate+InternetTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetTime.m"; sourceTree = "<group>"; };
-		05D989C1114D725C002DC175 /* TCBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBorderlessWindow.m; sourceTree = "<group>"; };
-		05D989C2114D725C002DC175 /* TCBorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBorderlessWindow.h; sourceTree = "<group>"; };
 		05D98AF5114D801C002DC175 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		256AC3D80F4B6AC300CF3369 /* atimeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atimeAppDelegate.h; sourceTree = "<group>"; };
-		256AC3D90F4B6AC300CF3369 /* atimeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atimeAppDelegate.m; sourceTree = "<group>"; };
 		256AC3F00F4B6AF500CF3369 /* atime_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atime_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* atime-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "atime-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* @ime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "@ime.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB0A31512C4112200B1044C /* atimeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atimeAppDelegate.h; path = classes/atimeAppDelegate.h; sourceTree = "<group>"; };
+		EEB0A31612C4112200B1044C /* atimeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = atimeAppDelegate.m; path = classes/atimeAppDelegate.m; sourceTree = "<group>"; };
+		EEB0A31712C4112200B1044C /* NSDate+InternetTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+InternetTime.h"; path = "classes/NSDate+InternetTime.h"; sourceTree = "<group>"; };
+		EEB0A31812C4112200B1044C /* NSDate+InternetTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+InternetTime.m"; path = "classes/NSDate+InternetTime.m"; sourceTree = "<group>"; };
+		EEB0A31912C4112200B1044C /* TCBorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCBorderlessWindow.h; path = classes/TCBorderlessWindow.h; sourceTree = "<group>"; };
+		EEB0A31A12C4112200B1044C /* TCBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCBorderlessWindow.m; path = classes/TCBorderlessWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +49,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				256AC3D80F4B6AC300CF3369 /* atimeAppDelegate.h */,
-				256AC3D90F4B6AC300CF3369 /* atimeAppDelegate.m */,
-				05D989A7114D5AFF002DC175 /* NSDate+InternetTime.h */,
-				05D989A8114D5AFF002DC175 /* NSDate+InternetTime.m */,
-				05D989C2114D725C002DC175 /* TCBorderlessWindow.h */,
-				05D989C1114D725C002DC175 /* TCBorderlessWindow.m */,
+				EEB0A31512C4112200B1044C /* atimeAppDelegate.h */,
+				EEB0A31612C4112200B1044C /* atimeAppDelegate.m */,
+				EEB0A31712C4112200B1044C /* NSDate+InternetTime.h */,
+				EEB0A31812C4112200B1044C /* NSDate+InternetTime.m */,
+				EEB0A31912C4112200B1044C /* TCBorderlessWindow.h */,
+				EEB0A31A12C4112200B1044C /* TCBorderlessWindow.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -171,9 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				256AC3DA0F4B6AC300CF3369 /* atimeAppDelegate.m in Sources */,
-				05D989A9114D5AFF002DC175 /* NSDate+InternetTime.m in Sources */,
-				05D989C3114D725C002DC175 /* TCBorderlessWindow.m in Sources */,
+				EEB0A31B12C4112200B1044C /* atimeAppDelegate.m in Sources */,
+				EEB0A31C12C4112200B1044C /* NSDate+InternetTime.m in Sources */,
+				EEB0A31D12C4112200B1044C /* TCBorderlessWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
