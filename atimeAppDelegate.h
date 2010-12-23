@@ -10,9 +10,13 @@
 
 @interface atimeAppDelegate : NSObject {
 @private
+    NSTimer *updater;
+    NSDictionary *beatAttributeDictionary;
+    NSDictionary *centiBeatAttributeDictionary;
+    
     NSWindow *window;
     NSTextField *label;
-    NSTimer *updater;
+    
 }
 
 @property (assign) IBOutlet NSWindow *window;
