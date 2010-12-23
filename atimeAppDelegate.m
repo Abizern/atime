@@ -9,30 +9,33 @@
 #import "atimeAppDelegate.h"
 #import "NSDate+InternetTime.h"
 
-#define $sf(...) [NSString stringWithFormat:__VA_ARGS__]
-
 @implementation atimeAppDelegate
 
 @synthesize window;
 @synthesize label;
 
 - (void)updateTime {
-	double internetTime = [NSDate internetTimeOfDay];
-	NSUInteger beats = internetTime;
-	NSUInteger centiBeats = (internetTime-beats)*100;
-	
-	NSAttributedString *atString = [[[NSAttributedString alloc] initWithString:@"@" attributes:beatAttributeDictionary] autorelease];
-	
-	NSAttributedString *beatString = [[[NSAttributedString alloc] initWithString:$sf(@"%3d", beats) attributes:beatAttributeDictionary] autorelease];
-	
-	NSAttributedString *centiBeatString = [[[NSAttributedString alloc] initWithString:$sf(@"%02d", centiBeats) attributes:centiBeatAttributeDictionary] autorelease];
+    double internetTime = [NSDate internetTimeOfDay];
+    NSUInteger iTimeInCentiBeats = (NSUInteger)(internetTime * 100);
     
-    NSMutableAttributedString *displayString = [[NSMutableAttributedString new] autorelease];
+    NSString *iTimeAsString = [[NSString alloc] initWithFormat:@"@%lu", (unsigned long)iTimeInCentiBeats];
+    NSString *centiBeats = [iTimeAsString substringFromIndex:[iTimeAsString length] - 2];
+    NSString *beats = [iTimeAsString substringToIndex:[iTimeAsString length] - 2];
+    
+    [iTimeAsString release];
 	
-	[displayString appendAttributedString:atString];
-	[displayString appendAttributedString:beatString];
+	NSAttributedString *beatString = [[NSAttributedString alloc] initWithString:beats attributes:beatAttributeDictionary];
+	
+	NSAttributedString *centiBeatString = [[NSAttributedString alloc] initWithString:centiBeats attributes:centiBeatAttributeDictionary];
+    
+    NSMutableAttributedString *displayString = [[NSMutableAttributedString alloc] initWithAttributedString:beatString];
+	
 	[displayString appendAttributedString:centiBeatString];
 	[label setAttributedStringValue:displayString];
+    
+    [beatString release];
+    [centiBeatString release];
+    [displayString release];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
