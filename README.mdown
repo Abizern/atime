@@ -1,4 +1,6 @@
 @ime (pronounced "atime")
 ===========================
 
-The ninties called. They want to sell you on Swatch Internet Time. It's very cyberspace.
+The ninties called. They want to sell you on [Swatch Internet Time][1]. It's very cyberspace.
+
+[1]: http://en.wikipedia.org/wiki/Swatch_Internet_Time "Wikipedia Link"
