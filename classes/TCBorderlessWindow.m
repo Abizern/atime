@@ -6,7 +6,7 @@
 	[super initWithContentRect:contentRect styleMask:NSBorderlessWindowMask|NSTexturedBackgroundWindowMask backing:bufferingType defer:flag];
 	[self setOpaque:NO];
 	[self setBackgroundColor:[NSColor clearColor]];
-	[self setCollectionBehavior:NSWindowCollectionBehaviorStationary];
+	[self setCollectionBehavior:NSWindowCollectionBehaviorStationary | NSWindowCollectionBehaviorCanJoinAllSpaces];
 	
     return self;
 }
